@@ -20,5 +20,5 @@ This Machine Learning model classifies Alzheimer's Disease MRI scans using a Con
    ```bash
    pip install -r requirements.txt
 3. **Test the model**:
-   Run text.ipynb in the virtual environment with installed packages
+   Run test.ipynb in the virtual environment with installed packages
    
