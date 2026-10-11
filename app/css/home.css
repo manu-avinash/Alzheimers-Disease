@@ -1,0 +1,69 @@
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, rgba(128, 128, 128, 0.3),black);
+}
+main a {
+  color: peachpuff;
+}
+main div{
+  border-radius: 10px;
+}
+main h1,main h2{
+  text-shadow: 2px 2px 3px rgba(0, 255, 255, 0.5);
+}
+.def {
+  margin: 0 0 15px 0;
+}
+.def h1{
+  margin-left:10px ;
+}
+.def article {
+  background-color: rgb(10, 10, 10);
+  margin: 25px 0 0 0;
+  padding: 20px;
+  font-size: x-large;
+}
+.solution {
+  background-color: rgb(15, 15, 15);
+  font-size: large;
+  padding: 20px;
+  margin: 0 0 15px 0;
+}
+.solution article {
+  margin: 18px 0;
+  line-height: 1.5;
+}
+.stat {
+  background-color: rgba(10, 10, 10);
+  padding: 20px;
+  margin: 0 0 15px 0;
+}
+.stat article {
+  margin: 10px 0 0 0;
+  font-size: large;
+  line-height: 1.5;
+}
+.diagnosis {
+  background-color: rgba(10, 10, 10);
+
+  padding: 20px;
+  margin: 0 0 15px 0;
+}
+.diagnosis article {
+    font-size: large;
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+}
+.problem_statement {
+  background-image: linear-gradient(90deg ,rgba(0, 255, 255, 0.7),black,rgba(128, 128, 128, 0.7));
+  padding:15px 30px 30px 30px;  
+}
+.problem_statement h1{
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+}
+.problem_statement article {
+  margin-top: 15px;
+  font-size: 24px;
+}

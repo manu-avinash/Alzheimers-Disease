@@ -7,84 +7,122 @@
     <title>Alzheimer</title>
     <link rel="stylesheet" href="/app/css/home.css">
     <link rel="stylesheet" href="/app/css/general.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+    </style>
 </head>
 
 <body>
     <div class="head_main">
-        <header>
-            <nav>
-                <div class="home_tab">Home</div>
-                <div class="test_tab">Test</div>
-                <div class="contact_tab">Contact</div>
+        <header class="header">
+            <nav class="nav">
+                <div class="home_tab">
+                    <p>Home</p>
+                </div>
+                <div class="test_tab">
+                    <p>Test</p>
+                </div>
+                <div class="contact_tab">
+                    <p>Contact</p>
+                </div>
             </nav>
         </header>
-        <main>
-            <h1>Alzheimer's Disease</h1>
-            <article>
-                Alzheimer's Disease is a neurodegenerative disease, responsible for most of dementia cases. The most
-                commonly early occuring symptom is forgeting recent events. Furthur leading to have problem with
-                language,
-                disorientation, mood swings, loss of motivation, self-neglet and behavioral issues. As it advances the
-                person often withdraws from family and society, wanting to be alone. Gradually, bodily functions are
-                lost,
-                leading to death. <a href="https://en.wikipedia.org/wiki/Alzheimer%27s_disease"
-                    target="_blank">Wikipedia</a>
-            </article>
-            <h2>Treatment ?</h2>
-            <article>
-                As the disease is a genetic reasons, there is no current cure for Alzheimer's disease. But the medical
-                treatments given for people with it is mainly to slow the clinical decline, make them feel better,
-                reducing
-                the symptoms, supporting their daily functions. There are some drugs like donepezil, galantamine, and
-                rivastigmine to help maintain memory and thinking skills for early stages. Some antidepressants to help
-                them
-                with depression, mood stabilizers etc. Also cognitive stimulation therapy, memory rehabilitation, and
-                social
-                engagement help preserve quality of life. These all medical treatments are for early stages of
-                Alzheimer,
-                for futher patients with higher stages, we can only give them a good rest for their life.
-            </article>
-            <h2>Statistics</h2>
-            <article>Someone in the world develops dementia every 3 seconds. There are over 55 million people worldwide
-                living with dementia in 2020. This number will almost double every 20 years, reaching 78 million in 2030
-                and 139 million in 2050. Much of the increase will be in developing countries. Already 60% of people
-                with dementia live in low and middle income countries, but by 2050 this will rise to 71%. The fastest
-                growth in the elderly population is taking place in China, India, and their south Asian and western
-                Pacific neighbours. </article>
+        <main class="main">
+            <div class="def">
+                <h1>Alzheimer's Disease</h1>
+                <article>
+                    Alzheimer's Disease is a neurodegenerative disease, responsible for most of dementia cases. The most
+                    commonly early occuring symptom is forgeting recent events. Furthur leading to have problem with
+                    language,
+                    disorientation, mood swings, loss of motivation, self-neglet and behavioral issues. As it advances
+                    the
+                    person often withdraws from family and society, wanting to be alone. Gradually, bodily functions are
+                    lost,
+                    leading to death. <a href="https://en.wikipedia.org/wiki/Alzheimer%27s_disease"
+                        target="_blank">Wikipedia</a>
+                </article>
+            </div>
+            <div class="solution">
+                <h2>Treatment ?</h2>
+                <article>
+                    As the disease is a genetic reasons, there is no current cure for Alzheimer's disease. But the
+                    medical
+                    treatments given for people with it is mainly to slow the clinical decline, make them feel better,
+                    reducing
+                    the symptoms, supporting their daily functions. There are some drugs like donepezil, galantamine,
+                    and
+                    rivastigmine to help maintain memory and thinking skills for early stages. Some antidepressants to
+                    help
+                    them
+                    with depression, mood stabilizers etc. Also cognitive stimulation therapy, memory rehabilitation,
+                    and
+                    social
+                    engagement help preserve quality of life. These all medical treatments are for early stages of
+                    Alzheimer,
+                    for futher patients with higher stages, we can only give them a good rest for their life.
+                </article>
+            </div>
+            <div class="stat">
+                <h2>Statistics</h2>
+                <article>Someone in the world develops dementia every 3 seconds. There are over 55 million people
+                    worldwide
+                    living with dementia in 2020. This number will almost double every 20 years, reaching 78 million in
+                    2030
+                    and 139 million in 2050. Much of the increase will be in developing countries. Already 60% of people
+                    with dementia live in low and middle income countries, but by 2050 this will rise to 71%. The
+                    fastest
+                    growth in the elderly population is taking place in China, India, and their south Asian and western
+                    Pacific neighbours. </article>
+            </div>
+            <div class="diagnosis">
+                <h2>Diagnosis</h2>
+                <article>
 
-            <h2>Diagnosis</h2>
-            <article>
+                    Research shows that most people currently living with dementia have not received a formal diagnosis.
+                    In
+                    high income countries, only 20-50% of dementia cases are recognised and documented in primary care.
+                    This
+                    ‘treatment gap’ is certainly much greater in low and middle income countries, with one study in
+                    India
+                    suggesting 90% remain undiagnosed. If these statistics are extrapolated to other countries
+                    worldwide, it
+                    suggests that approximately three quarters of people with dementia have not received a diagnosis,
+                    and
+                    therefore do not have access to treatment, care and organised support that getting a formal
+                    diagnosis
+                    can provide.<a href="https://www.alzint.org/about/dementia-facts-figures/dementia-statistics/"
+                        target="_blank">Alzheimer's Disease International</a>
+                </article>
+            </div>
+            <div class="problem_statement">
+                <h1>Where does this project come in ?</h1>
+                <article>
+                    This is an image model capable of classifing a MRI imagery into Alzheimer's disease positive,
+                    cognitively
+                    normal, Early mild cognitive impairment and Late mild cognitive impairment. Which would be cruially
+                    helpful
+                    for the diagnosis of Alzheimer's disease for early precautive measures and treatments to abstruct
+                    the
+                    proceeding of the disease to next stages.
+                    This image model is build on CNN architecture with keras and python. Achieveing maximum accuracy in
+                    classifing the MRI scans. The data was collected from kaggle, a vast library of dataset. Cleaned,
+                    preprocessed and trained on it. The project code can be accessed through the following github link -
+                    <a href="https://github.com/manu-avinash/Alzheimers-Disease"
+                        target="_blank">Alzheimer's-disease</a>.
+                </article>
+            </div>
 
-                Research shows that most people currently living with dementia have not received a formal diagnosis. In
-                high income countries, only 20-50% of dementia cases are recognised and documented in primary care. This
-                ‘treatment gap’ is certainly much greater in low and middle income countries, with one study in India
-                suggesting 90% remain undiagnosed. If these statistics are extrapolated to other countries worldwide, it
-                suggests that approximately three quarters of people with dementia have not received a diagnosis, and
-                therefore do not have access to treatment, care and organised support that getting a formal diagnosis
-                can provide.<a href="https://www.alzint.org/about/dementia-facts-figures/dementia-statistics/"
-                    target="_blank">Alzheimer's Disease International</a>
-            </article>
-            <h2>Where does this image model come in ?</h2>
-            <article>
-                This image model is capable of classifing a MRI imagery into Alzheimer's disease positive, cognitively
-                normal, Early mild cognitive impairment and Late mild cognitive impairment. Which would be cruially
-                helpful
-                for the diagnosis of Alzheimer's disease for early precautive measures and treatments to abstruct the
-                proceeding of the disease to next stages.
-                This image model is build on CNN architecture with keras and python. Achieveing maximum accuracy in
-                classifing the MRI scans. The data was collected from kaggle, a vast library of dataset. Cleaned,
-                preprocessed and trained on it. The project code can be accessed through the following github link - <a
-                    href="https://github.com/manu-avinash/Alzheimers-Disease" target="_blank">Alzheimer's-disease</a>.
-            </article>
         </main>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>
             MIT License
 
             Copyright (c) 2025 manu-avinash</p>
     </footer>
+    <script src="/app/js/general.js"></script>
+
 </body>
 
 </html>

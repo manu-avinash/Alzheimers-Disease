@@ -8,18 +8,27 @@
 
     <link rel="stylesheet" href="/app/css/test.css">
     <link rel="stylesheet" href="/app/css/general.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+    </style>
 </head>
 
 <body>
     <div class="head_main">
-        <header>
-            <nav>
-                <div class="home_tab">Home</div>
-                <div class="test_tab">Test</div>
-                <div class="contact_tab">Contact</div>
+        <header class="header">
+            <nav class="nav">
+                <div class="home_tab">
+                    <p>Home</p>
+                </div>
+                <div class="test_tab">
+                    <p>Test</p>
+                </div>
+                <div class="contact_tab">
+                    <p>Contact</p>
+                </div>
             </nav>
         </header>
-        <main>
+        <main class="main">
             <div class="image"><img src="" alt="mri-scan"></div>
             <div class="upload-img"><button class="upload-img-button">Upload</button></div>
             <div class="diagnosis">Diagnosis - None</div>
@@ -27,12 +36,14 @@
             <div class="fun_fact">*fun-fact</div>
         </main>
     </div>
-    <footer>
+    <footer class="footer">
         <p>
             MIT License
 
             Copyright (c) 2025 manu-avinash</p>
     </footer>
+    <script src="/app/js/general.js"></script>
+
 </body>
 
 </html>
