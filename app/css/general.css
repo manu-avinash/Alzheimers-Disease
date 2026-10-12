@@ -28,7 +28,7 @@ nav
 }
 nav div{
     
-    border-bottom: 2px solid rgba(255, 255, 0, 0.35);
+    border-bottom: 2px solid cyan;
 }
 nav div{
     transition-property: transform;
@@ -52,4 +52,5 @@ footer{
     display: flex;
     align-items: center;
     background-color: rgb(31, 13, 13);
+    padding: 10px 0px 50px 10px;
 }
