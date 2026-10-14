@@ -42,6 +42,9 @@ main{
     flex: 1;
     padding: 15px;
 }
+a{
+    color: peachpuff;
+}
 .head_main{
     display: flex;
     flex: 1;
