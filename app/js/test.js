@@ -1,6 +1,9 @@
+API_URL='http://0.0.0.0:8000'
+
+
 const image = document.querySelector(".image").firstElementChild;
 const upload_img_button = document.querySelector(".upload-img-button");
-
+const result=document.querySelector(".result");
 upload_img_button.addEventListener("click", async () => {
   try {
     // 1. Open the native file picker
@@ -20,10 +23,19 @@ upload_img_button.addEventListener("click", async () => {
     // 2. Extract the file data
     const file = await fileHandle.getFile();
 
-    // 3. Process the file (e.g., render a preview)
-
+    // 3. Process the file 
     image.src = URL.createObjectURL(file);
     image.style.display = "block";
+    const form=new FormData();
+    form.append("img",file);
+    const response=await fetch(API_URL+'/diagnose',{
+      method:'POST',
+      body:form
+    });
+    const data=await response.json();
+    
+    result.firstElementChild.innerHTML="Diagnosis - "+data['diagnosis']
+    result.lastElementChild.innerHTML="Confidence - "+data['confidence']+"%";
   } catch (err) {
     // Handles cases where the user cancels the picker window
     console.log("User cancelled or browser is unsupported:", err);
